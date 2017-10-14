@@ -967,7 +967,7 @@ module.exports = shallowEqual;
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -991,115 +991,114 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // import react module
-// import our screen component from this directory
+// Import our screen component from this directory
 
 
-// import our button component from this directory
+// Import our button component from this directory
 
-// create a class which expands react component 
+// create a class which extends react component
 var Frame = function (_React$Component) {
-	_inherits(Frame, _React$Component);
+  _inherits(Frame, _React$Component);
 
-	function Frame() {
-		_classCallCheck(this, Frame);
+  function Frame() {
+    _classCallCheck(this, Frame);
 
-		// set our default state
-		var _this = _possibleConstructorReturn(this, (Frame.__proto__ || Object.getPrototypeOf(Frame)).call(this));
+    // set our default state
+    var _this = _possibleConstructorReturn(this, (Frame.__proto__ || Object.getPrototypeOf(Frame)).call(this));
 
-		_this.state = {
-			question: '',
-			answer: ''
-			// bind our handleClick method (sets 'this' explicitly to refer to this component)
-			// we did this because 'this' would refer to the sourceof the click events
-		};_this.handleClick = _this.handleClick.bind(_this);
-		return _this;
-	}
+    _this.state = {
+      question: '',
+      answer: ''
+      // Bind our handleClick method (sets 'this' explicitly to refer to this componenent)
+      // We did this because 'this' would refer to the source of the click events
+    };_this.handleClick = _this.handleClick.bind(_this);
+    return _this;
+  }
 
-	// render function to create component to be rendered on the DOM.
-	// This method must return a single parent element as you can see here.
-	// The Component is wrapped around () to make it a single expression.
+  // Render function to creat component to be rendered on the DOM.
+  // This method must return a single parent element as you can see here. 
+  // The component is wrapped around () to make it a single expression.
 
 
-	_createClass(Frame, [{
-		key: 'render',
-		value: function render() {
-			return _react2.default.createElement(
-				'div',
-				{ className: 'frame' },
-				_react2.default.createElement(
-					'div',
-					{ className: 'calculator-title' },
-					'R_N calculator'
-				),
-				_react2.default.createElement(_screen2.default, { question: this.state.question, answer: this.state.answer }),
-				_react2.default.createElement(
-					'div',
-					{ className: 'button-row' },
-					_react2.default.createElement(_button2.default, { label: '1', handleClick: this.handleClick, type: 'input' }),
-					_react2.default.createElement(_button2.default, { label: '2', handleClick: this.handleClick, type: 'input' }),
-					_react2.default.createElement(_button2.default, { label: '3', handleClick: this.handleClick, type: 'input' }),
-					_react2.default.createElement(_button2.default, { label: '4', handleClick: this.handleClick, type: 'input' }),
-					_react2.default.createElement(_button2.default, { label: '-', handleClick: this.handleClick, type: 'action' }),
-					_react2.default.createElement(_button2.default, { label: '+', handleClick: this.handleClick, type: 'action' })
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'button-row' },
-					_react2.default.createElement(_button2.default, { label: '5', handleClick: this.handleClick, type: 'input' }),
-					_react2.default.createElement(_button2.default, { label: '6', handleClick: this.handleClick, type: 'input' }),
-					_react2.default.createElement(_button2.default, { label: '7', handleClick: this.handleClick, type: 'input' }),
-					_react2.default.createElement(_button2.default, { label: '8', handleClick: this.handleClick, type: 'input' }),
-					_react2.default.createElement(_button2.default, { label: '*', handleClick: this.handleClick, type: 'action' }),
-					_react2.default.createElement(_button2.default, { label: '/', handleClick: this.handleClick, type: 'action' })
-				),
-				_react2.default.createElement(
-					'div',
-					{ className: 'button-row' },
-					_react2.default.createElement(_button2.default, { label: '9', handleClick: this.handleClick, type: 'input' }),
-					_react2.default.createElement(_button2.default, { label: '.', handleClick: this.handleClick, type: 'input' }),
-					_react2.default.createElement(_button2.default, { label: '0', handleClick: this.handleClick, type: 'input' }),
-					_react2.default.createElement(_button2.default, { label: 'Cls', handleClick: this.handleClick, type: 'action' }),
-					_react2.default.createElement(_button2.default, { label: '=', handleClick: this.handleClick, type: 'action' })
-				)
-			);
-		}
-		// our method to handle all click events from our buttons
+  _createClass(Frame, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'frame' },
+        _react2.default.createElement(
+          'div',
+          { className: 'calculator-title' },
+          'R_N Calculator'
+        ),
+        _react2.default.createElement(_screen2.default, { question: this.state.question, answer: this.state.answer }),
+        _react2.default.createElement(
+          'div',
+          { className: 'button-row' },
+          _react2.default.createElement(_button2.default, { label: '1', handleClick: this.handleClick, type: 'input' }),
+          _react2.default.createElement(_button2.default, { label: '2', handleClick: this.handleClick, type: 'input' }),
+          _react2.default.createElement(_button2.default, { label: '3', handleClick: this.handleClick, type: 'input' }),
+          _react2.default.createElement(_button2.default, { label: '4', handleClick: this.handleClick, type: 'input' }),
+          _react2.default.createElement(_button2.default, { label: '-', handleClick: this.handleClick, type: 'action' }),
+          _react2.default.createElement(_button2.default, { label: '+', handleClick: this.handleClick, type: 'action' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'button-row' },
+          _react2.default.createElement(_button2.default, { label: '5', handleClick: this.handleClick, type: 'input' }),
+          _react2.default.createElement(_button2.default, { label: '6', handleClick: this.handleClick, type: 'input' }),
+          _react2.default.createElement(_button2.default, { label: '7', handleClick: this.handleClick, type: 'input' }),
+          _react2.default.createElement(_button2.default, { label: '8', handleClick: this.handleClick, type: 'input' }),
+          _react2.default.createElement(_button2.default, { label: '*', handleClick: this.handleClick, type: 'action' }),
+          _react2.default.createElement(_button2.default, { label: '/', handleClick: this.handleClick, type: 'action' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'button-row' },
+          _react2.default.createElement(_button2.default, { label: '9', handleClick: this.handleClick, type: 'input' }),
+          _react2.default.createElement(_button2.default, { label: '.', handleClick: this.handleClick, type: 'input' }),
+          _react2.default.createElement(_button2.default, { label: '0', handleClick: this.handleClick, type: 'input' }),
+          _react2.default.createElement(_button2.default, { label: 'Cls', handleClick: this.handleClick, type: 'action' }),
+          _react2.default.createElement(_button2.default, { label: '=', handleClick: this.handleClick, type: 'action' })
+        )
+      );
+    }
+    // our method to handle all click events from our buttons
 
-	}, {
-		key: 'handleClick',
-		value: function handleClick(event) {
-			var value = event.target.value; // get the value from the target element (button)
-			switch (value) {
-				case '=':
-					{
-						// if it's an equal sign, use the eval module to evaluate the question
-						// convert the answer (in number) to String
-						var answer = eval(this.state.question).toString();
-						// update answer in our state
-						this.setState({ answer: answer });
-						break;
-					}
+  }, {
+    key: 'handleClick',
+    value: function handleClick(event) {
+      var value = event.target.value; // get the value from the target element (button)
+      switch (value) {
+        case '=':
+          {
+            // if it's an equal sign, use the eval module to evaluate the question
+            // convert the answer (in number) to String
+            var answer = eval(this.state.question).toString();
+            // update answer in our state.
+            this.setState({ answer: answer });
+            break;
+          }
+        case 'Cls':
+          {
+            // if it's the Cls sign, just clean our question and answer in the state
+            this.setState({ question: '', answer: '' });
+            break;
+          }
+        default:
+          {
+            // for every other commmand, update the answer in the state
+            this.setState({ question: this.state.question += value });
+            break;
+          }
+      }
+    }
+  }]);
 
-				case 'Cls:':
-					{
-						// if it' the Cls sign, just clean our question and answerin the state
-						this.setState({ question: '', answer: '' });
-						break;
-					}
-				default:
-					{
-						// for every other command, update the answer in the state
-						this.setState({ question: this.state.question += value });
-						break;
-					}
-			}
-		}
-	}]);
-
-	return Frame;
+  return Frame;
 }(_react2.default.Component);
 
-// export our frame component. To be used in our client/index.js file.
+// export our frame component. To be used in our client/index.js file
 
 
 exports.default = Frame;
@@ -1185,7 +1184,7 @@ if(false) {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _react = __webpack_require__(2);
@@ -1194,22 +1193,25 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import our react module
+// import react module
+
+// create our Button component as a functional component
 var Button = function Button(props) {
-	return _react2.default.createElement('imput', { type: 'button',
-		className: props.type === 'action' ? 'button action-button' : 'button input-button',
-		onClick: props.handleClick,
-		value: props.label
-	});
+  return _react2.default.createElement('input', {
+    type: 'button',
+    className: props.type === 'action' ? 'button action-button' : 'button input-button',
+    onClick: props.handleClick,
+    value: props.label
+  });
 };
 
 // describe our expected props types
 Button.propTypes = {
-	type: _react2.default.PropTypes.string.isRequired,
-	handleClick: _react2.default.PropTypes.func.isRequired,
-	label: _react2.default.PropTypes.string.isRequired
+  type: _react2.default.PropTypes.string.isRequired,
+  handleClick: _react2.default.PropTypes.func.isRequired,
+  label: _react2.default.PropTypes.string.isRequired
 
-	// export our button component
+  // export our button component.
 };exports.default = Button;
 
 /***/ }),
@@ -1220,7 +1222,7 @@ Button.propTypes = {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _react = __webpack_require__(2);
@@ -1233,25 +1235,25 @@ var _screenRow2 = _interopRequireDefault(_screenRow);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// create our screen component as a functional component.
-// it would display two scree rows, 1 for questions and the other for the answer
-// the value would be passed down from it's parent component as a prop
+// Create our screen component as a functional component.
+// It would display two screen rows, 1 for questions and the other for the answer
+// The value would be passed down from it's parent component as a prop
 var Screen = function Screen(props) {
-	return _react2.default.createElement(
-		'div',
-		{ className: 'screen' },
-		_react2.default.createElement(_screenRow2.default, { value: props.question }),
-		_react2.default.createElement(_screenRow2.default, { value: props.answer })
-	);
+  return _react2.default.createElement(
+    'div',
+    { className: 'screen' },
+    _react2.default.createElement(_screenRow2.default, { value: props.question }),
+    _react2.default.createElement(_screenRow2.default, { value: props.answer })
+  );
 };
 
-// define our props expected from the parent component
-// import React module
+// Define our props expected from the parent component
+// Import react module
 Screen.propTypes = {
-	question: _react2.default.PropTypes.string.isRequired,
-	answer: _react2.default.PropTypes.string.isRequired
+  question: _react2.default.PropTypes.string.isRequired,
+  answer: _react2.default.PropTypes.string.isRequired
 
-	// export our component
+  // export our component
 };exports.default = Screen;
 
 /***/ }),
@@ -1262,7 +1264,7 @@ Screen.propTypes = {
 
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+  value: true
 });
 
 var _react = __webpack_require__(2);
@@ -1275,17 +1277,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // it receives and displays (in an input field) a props (property) of value from
 // it's parent component
 var ScreenRow = function ScreenRow(props) {
-	return _react2.default.createElement(
-		"div",
-		{ className: "screen-row" },
-		_react2.default.createElement("input", { type: "text", readOnly: true, value: props.value })
-	);
+  return _react2.default.createElement(
+    "div",
+    { className: "screen-row" },
+    _react2.default.createElement("input", { type: "text", readOnly: true, value: props.value })
+  );
 };
 
-// we describe the props (property) that the parent element is requiredto pass
-//into this component
+// we describe the props (property) that the parent element is required to pass
+// into this component
 ScreenRow.propTypes = {
-	value: _react2.default.PropTypes.string.isRequired
+  value: _react2.default.PropTypes.string.isRequired
 };
 
 exports.default = ScreenRow;
@@ -1315,12 +1317,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // import our external css file
 
-// using the render method, we will mount this node into our DOM (html file) on the element with
-// id of 'app'
+// using the render method, we will mount this node into our DOM (html file) 
+// on the element with id of 'app'
 // import ReactDOM package
 _reactDom2.default.render(_react2.default.createElement(_frame2.default, null), // mount our frame component
 document.getElementById('app')); // import our frame component
-// import react package
+// import React package
 
 /***/ }),
 /* 22 */
@@ -10042,7 +10044,7 @@ exports = module.exports = __webpack_require__(22)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n\tbackground-color: #fff;\n}", ""]);
+exports.push([module.i, "$background-color: black;\n$app-title-color: #00796b;\n\n* {\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  -webkit-box-sizing: border-box;\n}\n\nbody {\n  color: $app-title-color;\n  background-color: $background-color;\n}\n\n.calculator-title {\n  text-align: center;\n  font-size: 2.5em;\n  padding: 0;\n  margin: 0;\n}\n\n.calculator-title:hover {\n  border-bottom: 1px solid $app-title-color\n}\n\n.frame {\n  margin-top: 10%;\n  padding: 1% 3% 2% 3%;\n  border: 1px solid $app-title-color;\n  border-radius: 10px;\n}\n\n.i-btn {\n  font-size: 2em;\n}\n\n.btn-row {\n  padding: 1px 4%;\n}\n\n.input-screen, .output-screen {\n  text-align: right;\n}\n\n.input-screen {\n  font-size: 1.5em;\n  color: #37474f;\n  border-bottom: 1px solid #eceff1;\n}\n\n.output-screen {\n  color: #546e7a;\n  font-size: 1.8em;\n  margin-bottom: 5px;\n}\n\n.screen {\n  padding: 0 4%;\n}\n\n.i-btn {\n  border-radius: 5px;\n  outline: none;\n  text-align: center;\n}\n\n.i-btn:hover {\n  color: #e0e0e0;\n}\n\n.screen {\n  margin: 10px 0;\n  border-bottom: 1px solid #37474f;\n}\n", ""]);
 
 // exports
 
