@@ -8,7 +8,7 @@ import path from 'path';
 * It handles incoming requests and sends the response
 */
 
-functio requestHandler(request, response) {
+function requestHandler(request, response) {
 	// Resolve the path to the requested resource and assign it to a variable
 	let requestedResource = path.join(
 		__dirname, // current directory where server.js is found
@@ -71,7 +71,7 @@ functio requestHandler(request, response) {
 
 			response.writeHead(200, headers); // write response header (if any)
 			response.write(file, "binary"); // write content of read file (binary format)
-			resonse.end(); // send response and close request.
+			response.end(); // send response and close request.
 		});
 			
 	});
@@ -85,5 +85,5 @@ const portNumber = 3030;
 // setup our server to start listening on the port we specified
 server.listen(portNumber, function() {
 	// log to our console, so we know our server is up and running.
-	console.log('server listening on port ${portNumber)');
+	console.log('server listening on port ${portNumber}');
 });
